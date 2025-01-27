@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #ede7e1;
+      color: #333;
+      padding: 20px 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  margin-bottom: 0;
+    }
+    .header .company-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header .company-details .left-section {
+      display: flex;
+      align-items: center;
+    }
+    .header .company-details .company-logo {
+      width: 75px;
+      margin-right: 15px;
+    }
+    .header .company-details .company-name-tagline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+	  justify-content: center;
+    }
+    .header .company-details .company-name {
+      font-size: 50px;
+      font-weight: bold;
+      margin-left: 300px;
+      color: #1a1a1a;
+	  text-align: center;  /* Center the text */
+	  letter-spacing: 2px;  /* Space between letters */
+    }
+    .header .company-details .tagline {
+      font-weight: bold;
+      font-size: 24px;
+      color: #555;
+      text-align: center;
+	  margin-top:10px;
+      margin-left:300px;
+	  letter-spacing:1px;
+    }
+    .header .company-details .phone-number {
+      font-size: 20px;
+      color: #555;
+    }
+	.header .company-details .right-section {
+  display: flex;
+  flex-direction: column;  /* Arrange elements vertically */
+  align-items: flex-start;  /* Align to the right */
+  padding-right:1px;
+}
+
+
+.header .company-details .email {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;  /* Space between phone number and email */
+  text-decoration: none;
+}
+
+    .nav {
+      background-color: #efe9e8;
+      display: flex;
+      justify-content: center;
+      padding: 5px 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .nav a {
+      color: #333;
+      padding: 12px 60px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 22px;
+      font-family: "Roboto", sans-serif;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .nav a:hover {
+      background-color: #d9cfcf;
+      color: #00796b;
+      border-radius: 20px; /* Rounded effect */
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      text-align: left;
+      font-family: "Roboto", sans-serif;
+      background-color: #fff;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: #00796b;
+    }
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      height: 600px;
+      overflow: hidden;
+      margin-top: 5px;
+    }
+
+    .slides img {
+      display: none; /* Initially hide all images */
+      width: 100%;
+      height: 750px;
+      object-fit: cover;
+    }
+    .slides img.active {
+      display: block; /* Show only the active image */
+    }
+	.slide {
+  position: relative; /* Required for text positioning */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff; /* White text for contrast */
+  /* Remove background-color */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+  padding: 0; /* Remove padding if background is removed */
+  border-radius: 0; /* Remove border-radius if background is removed */
+}
+
+.text-overlay h2 {
+  font-size: 36px;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.text-overlay p {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #ddd;
+      transition: background-color 0.3s;
+    }
+    .dot.active {
+      background-color: #333;
+    }
+.footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00796b;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 14px;
+}
+
+.social-links a:hover {
+  color: #00796b;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+/* Adding two-column layout for services */
+.footer-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-services .service-columns {
+  display: flex;
+  gap: 40px; /* Space between columns */
+}
+
+.footer-services .service-column {
+  flex: 1;
+}
+
+.footer-services .footer-links {
+  margin-bottom: 0;
+}
+
+.footer-services .footer-links a:hover {
+  color: #00796b;
+}
+
+
+  </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industries Served - GeniusHub Technologies</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimize IT Maximize Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">: (123) 456-7890</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@geniushubtechnologies.com" class="email-link">: info@geniushubtechnologies.com</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="#">About Us</a>
+      <div class="dropdown-content">
+        <a href="WHY-GHT.HTML">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="#">Services</a>
+      <div class="dropdown-content">
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">Digital</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="content">
+    <h1>Industries Served by GeniusHub Technologies</h1>
+    <p>GeniusHub Technologies has extensive experience across a diverse range of industries, allowing us to offer industry-specific staffing strategies that enhance corporate performance. By focusing on key decision-making factors, we help businesses thrive in competitive environments. Our specialized staffing solutions enable businesses to make informed decisions that lead to improved outcomes.</p>
+
+    <p>We have also played a significant role in numerous SAP Implementations across the following industries:</p>
+    
+    <h2>Industries We Serve:</h2>
+    <ul>
+      <li><strong>Automotive</strong></li>
+      <li><strong>Mill Products</strong></li>
+      <li><strong>Oil & Gas</strong></li>
+      <li><strong>Public Sector</strong></li>
+      <li><strong>Retail</strong></li>
+      <li><strong>Real Estate</strong></li>
+      <li><strong>Service Providers</strong></li>
+      <li><strong>Telecommunications</strong></li>
+      <li><strong>Transportation</strong></li>
+      <li><strong>Wholesale & Distribution</strong></li>
+      <li><strong>Chemical</strong></li>
+      <li><strong>Consumer Products</strong></li>
+      <li><strong>Defense & Security</strong></li>
+      <li><strong>Engineering, Construction & Operations (EC&O)</strong></li>
+      <li><strong>High Tech</strong></li>
+      <li><strong>Insurance</strong></li>
+      <li><strong>Life Sciences</strong></li>
+      <li><strong>Media</strong></li>
+    </ul>
+
+    <p>At GeniusHub Technologies, we bring tailored solutions to each sector, enabling organizations to leverage technology to achieve strategic objectives and improve business outcomes.</p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+            <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+            <li><a href="staff.html">Staff Augmentation</a></li>
+            <li><a href="digital.html">Digital Solutions</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>📍 Location</p>
+      <p>📞 +1 (123) 456-7890</p>
+      <p>✉️ info@geniushubtechnologies.com</p>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Genius Hub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
