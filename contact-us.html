@@ -3,108 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industries Served - GeniusHub Technologies</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <title>GENIUSHUB TECHNOLOGIES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-    /* Global Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f7fa;
-      color: #333;
-    }
+    /* Global Reset */
 
-    h1, h2 {
-      font-family: 'Arial', sans-serif;
-      color: #2c3e50;
-    }
 
-    /* Content Section */
-    .content {
-      width: 80%;
+    .container {
       max-width: 1200px;
-      margin: 30px auto;
-      padding: 30px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin: 50px auto;
+      padding: 20px;
     }
 
-    .content h2 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
-
-    .content p {
-      font-size: 1rem;
-      line-height: 1.6;
+    .container h1 {
+      text-align: center;
+      color: #16a085;
       margin-bottom: 20px;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    .container .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      gap: 20px;
     }
 
-    ul li {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
-      padding-left: 1em;
-      position: relative;
-    }
-
-    ul li:before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #2980b9;
-      font-size: 1.5rem;
-      top: 0;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #2980b9;
-      color: white;
-      font-size: 1rem;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #3498db;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #34495e;
-      color: white;
-      text-align: center;
+    .container .info-box {
+      background: white;
       padding: 20px;
-      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      flex: 1 1 calc(33.333% - 20px);
+      text-align: center;
     }
 
-    footer p {
-      font-size: 1rem;
+    .container .info-box h3 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #16a085;
     }
 
-    footer a {
-      color: #ecf0f1;
-      text-decoration: none;
+    .container .info-box p {
+      font-size: 26px;
+      color: #7f8c8d;
+    }
+
+    .container .contact-form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container .contact-form h2 {
+      margin-bottom: 20px;
+      color: #16a085;
+    }
+
+    .container .form-group {
+      margin-bottom: 15px;
+    }
+
+    .container .form-group label {
+      display: block;
       font-weight: bold;
+      margin-bottom: 5px;
     }
 
-    footer a:hover {
-      text-decoration: underline;
+    .container .form-group input,
+    .container .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .container .form-group textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .container .submit-btn {
+      display: block;
+      width: 100%;
+      background-color: #16a085;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .container .submit-btn:hover {
+      background-color: #1abc9c;
+    }
     }
   </style>
 <body>
-  <!-- Header Section -->
+
   <div class="header">
     <div class="company-details">
       <div class="left-section">
@@ -163,41 +165,48 @@
       <a href="contact-us.html">Contact Us</a>
     </div>
   </div>
+  
+  <div class="container">
+    <h1>Contact Us</h1>
 
-  <!-- Content Section -->
-  <div class="content">
-    <h1>Industries We Serve</h1>
-    <p>At GeniusHub Technologies, we have extensive experience in various industries, allowing us to provide specialized staffing strategies that help businesses improve performance and achieve strategic objectives. Below are the industries we have worked with:</p>
+    <!-- Contact Information Section -->
+    <div class="contact-info">
+      <div class="info-box">
+        <h3>Phone</h3>
+        <p>+1 (214) 432-5727</p>
+      </div>
+      <div class="info-box">
+        <h3>Email</h3>
+        <p><a href="mailto:info@geniushubtechnologies.com" class="email-link"> info@geniushubtechnologies.com</a></p>
+      </div>
+      <div class="info-box">
+        <h3>Location</h3>
+        <p>101 E Park Blvd, suite 600, Plano, 75074</p>
+      </div>
+    </div>
 
-    <h2>Industries We Serve:</h2>
-    <ul>
-      <li><strong>Automotive</strong></li>
-      <li><strong>Mill Products</strong></li>
-      <li><strong>Oil & Gas</strong></li>
-      <li><strong>Public Sector</strong></li>
-      <li><strong>Retail</strong></li>
-      <li><strong>Real Estate</strong></li>
-      <li><strong>Service Providers</strong></li>
-      <li><strong>Telecommunications</strong></li>
-      <li><strong>Transportation</strong></li>
-      <li><strong>Wholesale & Distribution</strong></li>
-      <li><strong>Chemical</strong></li>
-      <li><strong>Consumer Products</strong></li>
-      <li><strong>Defense & Security</strong></li>
-      <li><strong>Engineering, Construction & Operations (EC&O)</strong></li>
-      <li><strong>High Tech</strong></li>
-      <li><strong>Insurance</strong></li>
-      <li><strong>Life Sciences</strong></li>
-      <li><strong>Media</strong></li>
-    </ul>
-
-    <p>We bring tailored technology solutions to each sector, helping organizations leverage the power of technology to achieve their goals and improve business outcomes. Our deep understanding of these industries allows us to offer expert guidance and support through every stage of transformation.</p>
-
-    <a href="contact-us.html" class="btn">Get in Touch</a>
-  </div>
-
-  <!-- Footer Section -->
-<footer class="footer">
+    <!-- Contact Form Section 
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>-->
+	</div>
+  </body>
+ <footer class="footer">
   <div class="footer-container">
     <!-- Services Section -->
     <div class="footer-section footer-services">
@@ -227,7 +236,7 @@
     <!-- Contact Information -->
     <div class="footer-section footer-contact">
       <h3>Contact Us</h3>
-      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📍 101 E Park Blvd, suite 600 Plano 75074</p>
       <p>📞 +1 (214) 432-5727</p>
       <p>✉️ info@geniushubtechnologies.com</p>
     </div>
@@ -236,5 +245,5 @@
     <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
   </div>
 </footer>
-</body>
+
 </html>

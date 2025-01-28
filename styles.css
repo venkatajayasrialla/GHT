@@ -55,6 +55,7 @@
     .header .company-details .phone-number {
       font-size: 20px;
       color: #fff;
+	  padding-bottom:10px;
     }
 	.header .company-details .right-section {
   display: flex;
@@ -67,7 +68,7 @@
 .header .company-details .email {
   font-size: 20px;
   color: #fff;
-  margin-top: 5px;  /* Space between phone number and email */
+  margin-top: 15px;  /* Space between phone number and email */
   text-decoration: none;
 }
 
@@ -80,11 +81,12 @@
     }
     .nav a {
       color: #ffffff;
+	  font-weight:bold;
       padding: 12px 60px;
       text-decoration: none;
       text-align: center;
       font-size: 22px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto Slab", sans-serif;
       transition: color 0.3s ease, background-color 0.3s ease;
     }
     .nav a:hover {
@@ -202,20 +204,20 @@
 
 .footer-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .footer-section {
-  flex: 1 1 300px;
+  flex: 1;
   margin: 10px;
 }
 
 .footer-section h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 15px;
   color: #fff;
 }
@@ -227,7 +229,7 @@
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+  margin-bottom: 30px;
 }
 
 .footer-links a {
@@ -240,49 +242,50 @@
   color: #00796b;
 }
 
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  text-decoration: none;
-  color: #f1f1f1;
-  font-size: 14px;
+.footer-services {
+  display: flex;
+  flex-direction: column;
+  align-items:Center;
 }
 
-.social-links a:hover {
-  color: #00796b;
+.footer-services .service-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-services .service-column {
+  flex: 1;
+   min-width: 200px;
+}
+
+.footer-contact {
+  text-align: left;
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0px;
   border-top: 1px solid #555;
   padding-top: 10px;
   font-size: 14px;
 }
 
-/* Adding two-column layout for services */
-.footer-services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+/* Mobile Optimization */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-services .service-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-section {
+    margin-bottom: 20px;
+  }
+  .footer-bottom {
+    margin-top: 30px;
+  }
 }
-
-.footer-services .service-columns {
-  display: flex;
-  gap: 40px; /* Space between columns */
-}
-
-.footer-services .service-column {
-  flex: 1;
-}
-
-.footer-services .footer-links {
-  margin-bottom: 0;
-}
-
-.footer-services .footer-links a:hover {
-  color: #00796b;
-}
-
 
   </style>

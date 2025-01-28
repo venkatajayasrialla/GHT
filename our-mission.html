@@ -3,28 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Mission | GeniusHub Technologies</title>
+  <title>Our Mission - GeniusHub Technologies</title>
   <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
 </head>
+<style>
+/* Main Content */
+.our-mission-content {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Style */
+.our-mission-content h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.our-mission-content h2:hover {
+    color: #e74c3c;
+}
+
+/* Paragraph Style */
+.our-mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #333;
+}
+
+.our-mission-content p:hover {
+    background-color: #ecf0f1;
+    transition: background-color 0.3s ease;
+}
+
+.our-mission-content strong {
+    font-weight: bold;
+}
+
+</style>
 <body>
 
   <!-- Reuse the Header -->
-  <div class="header">
+ <div class="header">
     <div class="company-details">
       <div class="left-section">
         <img src="ght.png" alt="GHT" class="company-logo">
         <div class="company-name-tagline">
-          <div class="company-name">GENIUSHUB TECHNOLOGIES</div>
-          <div class="tagline">Optimize IT Maximize Success</div>
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
         </div>
       </div>
           <div class="right-section">
       <div class="contact-info">
         <div class="phone">
-          &#128222; <span class="phone-number">: (123) 456-7890</span> <!-- Phone Unicode -->
+          &#128222; <span class="phone-number"> +1 (214) 432-5727</span> <!-- Phone Unicode -->
         </div>
         <div class="email">
-          &#9993; <a href="mailto:info@geniushubtechnologies.com" class="email-link">: info@geniushubtechnologies.com</a> <!-- Email Unicode -->
+          &#9993; <a href="mailto:info@geniushubtechnologies.com" class="email-link"> info@geniushubtechnologies.com</a> <!-- Email Unicode -->
         </div>
       </div>
     </div>
@@ -36,15 +78,15 @@
       <a href="index.html">GHT</a>
     </div>
     <div class="dropdown">
-      <a href="#">About Us</a>
+      <a href="overview.html">About Us</a>
       <div class="dropdown-content">
-        <a href="WHY-GHT.HTML">Why GHT</a>
+        <a href="why-ght.HTML">Why GHT</a>
         <a href="our-mission.html">Our Mission</a>
         <a href="strategy.html">Strategic Framework</a>
       </div>
     </div>
     <div class="dropdown">
-      <a href="#">Services</a>
+      <a href="services.html">Services</a>
       <div class="dropdown-content">
         <a href="erp.html">ERP Implementations</a>
         <a href="application.html">Application Development</a>
@@ -64,24 +106,29 @@
       <a href="training.html">Training</a>
     </div>
     <div class="dropdown">
-      <a href="#">Contact Us</a>
+      <a href="contact-us.html">Contact Us</a>
     </div>
   </div>
 
-
   <!-- Main Content for "Our Mission" -->
-  <div class="our-mission-content">
-    <h1>Transform Your Business with GHT</h1>
+<div class="our-mission-content">
+    <h2>Our Mission</h2>
+    <p>
+        At <strong>GeniusHub Technologies Inc.</strong>, our mission is to empower businesses with cutting-edge IT solutions that drive <strong>innovation</strong>, enhance <strong>efficiency</strong>, and enable <strong>growth</strong>. We are dedicated to delivering tailored technology services that address our clients’ unique challenges while creating lasting value.
+    </p>
 
-    <p>In today’s competitive landscape, technology is the backbone of success. At GeniusHub Technologies, we go beyond traditional IT consulting by offering solutions that are designed to evolve with your business. From implementing cutting-edge tools to developing strategies that enhance efficiency, our goal is to unlock your full potential and drive lasting growth.</p>
+    <p>
+        We believe that success begins with people. By fostering a supportive work environment and investing in the growth and development of our employees, we ensure they are equipped to deliver exceptional results.
+    </p>
 
-    <p>We work closely with our clients to understand their unique needs and challenges, providing tailored IT solutions that seamlessly integrate with their existing systems. Our commitment to excellence ensures that you’re equipped with the right tools to succeed, now and in the future.</p>
+    <p>
+        Our goal is to be a trusted partner for businesses of all sizes, helping them navigate the complexities of the digital age with confidence. At GeniusHub Technologies, we don’t just solve problems—we build opportunities for transformation and success.
+    </p>
+</div>
 
-    <p>Our mission is to help your business stay ahead of the curve, adapting to the ever-changing technological landscape. Let us empower your business with innovative solutions and the expertise to navigate tomorrow’s challenges today.</p>
-  </div>
 
   <!-- Reuse the Footer -->
-  <footer class="footer">
+<footer class="footer">
   <div class="footer-container">
     <!-- Services Section -->
     <div class="footer-section footer-services">
@@ -91,13 +138,17 @@
           <ul class="footer-links">
             <li><a href="erp.html">ERP Implementations</a></li>
             <li><a href="application.html">Application Development</a></li>
-            <li><a href="quality.html">Quality Assurance</a></li>
           </ul>
         </div>
         <div class="service-column">
           <ul class="footer-links">
             <li><a href="staff.html">Staff Augmentation</a></li>
-            <li><a href="digital.html">Digital Solutions</a></li>
+            <li><a href="digital.html">Digital Solutions</a></li>          
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+            <li><a href="quality.html">Quality Assurance</a></li>
             <li><a href="offshore.html">Offshore Outsourcing</a></li>
           </ul>
         </div>
@@ -105,28 +156,19 @@
     </div>
 
     <!-- Contact Information -->
-    <div class="footer-section">
+    <div class="footer-section footer-contact">
       <h3>Contact Us</h3>
-      <p>📍 Location</p>
-      <p>📞 +1 (123) 456-7890</p>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
       <p>✉️ info@geniushubtechnologies.com</p>
-    </div>
-
-    <!-- Social Media Links -->
-    <div class="footer-section">
-      <h3>Follow Us</h3>
-      <div class="social-links">
-        <a href="#" aria-label="Facebook">Facebook</a>
-        <a href="#" aria-label="Twitter">Twitter</a>
-        <a href="#" aria-label="LinkedIn">LinkedIn</a>
-        <a href="#" aria-label="Instagram">Instagram</a>
-      </div>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Genius Hub Technologies. All rights reserved.</p>
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
   </div>
 </footer>
+
+
 
 </body>
 </html>
