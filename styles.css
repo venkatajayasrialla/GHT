@@ -82,10 +82,10 @@
     .nav a {
       color: #ffffff;
 	  font-weight:bold;
-      padding: 12px 60px;
+      padding: 12px 40px;
       text-decoration: none;
       text-align: center;
-      font-size: 22px;
+      font-size: 20px;
       font-family: "Roboto Slab", sans-serif;
       transition: color 0.3s ease, background-color 0.3s ease;
     }
@@ -195,6 +195,8 @@
     .dot.active {
       background-color: #333;
     }
+	
+	
 .footer {
   background-color: #4682B4;
   color: #fff;
