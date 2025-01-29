@@ -7,10 +7,105 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <style>
-.content p{
-	font-size:18px;
-	font-family: "Times New Roman", Times, serif;
+/* Body Enhancements */
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
 }
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sub-heading {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.service-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 23%; 
+  box-sizing:border-box;
+  margin-bottom:20px;
+}
+
+.service-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  font-size: 22px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* Make the layout responsive */
+@media (max-width: 1024px) {
+  .service-item {
+    width: 45%; /* 2 items per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* 1 item per row for smaller screens */
+  }
+}
+
+.overview, .why-choose {
+  margin-top: 40px;
+}
+
+.overview p, .why-choose p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
 </style>
 <body>
   <!-- Header Section -->
@@ -117,30 +212,64 @@
 </script>
 
   <!-- Content Section -->
+<body>
+  <!-- Content Section -->
   <div class="content">
-    <h1>Custom Solutions and Services at GeniusHub Technologies</h1>
+    <h1 class="section-title">Custom Solutions and Services at GeniusHub Technologies</h1>
 
-    <p>At GeniusHub Technologies, we understand that staffing a development project can present unique challenges. Whether you need specialized expertise or a dedicated team to manage the design and execution of your project, we have the resources and talent to meet your specific needs.</p>
+    <p class="intro-text">At GeniusHub Technologies, we understand that staffing a development project can present unique challenges. Whether you need specialized expertise or a dedicated team to manage the design and execution of your project, we have the resources and talent to meet your specific needs.</p>
 
-    <h2>Our Services Include:</h2>
-    <ul>
-      <li>ERP Implementation</li>
-      <li>Custom Application Development</li>
-      <li>Internet/Intranet Application Development</li>
-      <li>Software Quality Assurance and Testing</li>
-      <li>Corporate Training</li>
-      <li>Staff Augmentation</li>
-      <li>eBusiness Solutions</li>
-      <li>Offshore Outsourcing</li>
-    </ul>
+    <section class="services">
+      <h2 class="sub-heading">Our Services Include:</h2>
+      <div class="service-list">
+        <div class="service-item">
+          <h3>ERP Implementation</h3>
+          <p>We help you implement ERP systems that streamline your business processes.</p>
+        </div>
+        <div class="service-item">
+          <h3>Custom Application Development</h3>
+          <p>Get tailor-made applications that fit your unique business needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Internet/Intranet Application Development</h3>
+          <p>Secure and scalable applications to connect your internal teams and clients.</p>
+        </div>
+        <div class="service-item">
+          <h3>Software Quality Assurance and Testing</h3>
+          <p>Ensure the highest quality for your software with our expert QA and testing services.</p>
+        </div>
+        <div class="service-item">
+          <h3>Corporate Training</h3>
+          <p>Empower your workforce with targeted training programs that enhance skillsets.</p>
+        </div>
+        <div class="service-item">
+          <h3>Staff Augmentation</h3>
+          <p>Extend your team with skilled professionals for any short-term or long-term need.</p>
+        </div>
+        <div class="service-item">
+          <h3>eBusiness Solutions</h3>
+          <p>Boost your online presence and optimize e-commerce strategies.</p>
+        </div>
+        <div class="service-item">
+          <h3>Offshore Outsourcing</h3>
+          <p>Outsource non-core activities to improve efficiency and reduce costs.</p>
+        </div>
+      </div>
+    </section>
 
-    <p>With over 15 years of global experience in the IT industry, GeniusHub Technologies offers a comprehensive portfolio of IT services. Our solutions are flexible and adaptable, covering a wide range of industries and technologies. We work closely with you to deliver practical IT solutions tailored to help you achieve your strategic objectives while enhancing operational efficiency and reducing costs.</p>
+    <section class="overview">
+      <p>With over 15 years of global experience in the IT industry, GeniusHub Technologies offers a comprehensive portfolio of IT services. Our solutions are flexible and adaptable, covering a wide range of industries and technologies. We work closely with you to deliver practical IT solutions tailored to help you achieve your strategic objectives while enhancing operational efficiency and reducing costs.</p>
 
-    <p>By being embedded in the local business community, we pride ourselves on being quick and responsive to your business needs. This flexibility allows us to help you stay ahead of market changes and meet your business goals.</p>
+      <p>By being embedded in the local business community, we pride ourselves on being quick and responsive to your business needs. This flexibility allows us to help you stay ahead of market changes and meet your business goals.</p>
+    </section>
 
-    <h2>Why Choose GeniusHub Technologies?</h2>
-    <p>We offer a full spectrum of services designed to address the challenges of today’s fast-evolving market. Our experienced professionals leverage GeniusHub Technologies' expertise to deliver innovative, cost-effective, and actionable solutions that align with your business strategy and goals.</p>
+    <section class="why-choose">
+      <h2 class="sub-heading">Why Choose GeniusHub Technologies?</h2>
+      <p>We offer a full spectrum of services designed to address the challenges of today’s fast-evolving market. Our experienced professionals leverage GeniusHub Technologies' expertise to deliver innovative, cost-effective, and actionable solutions that align with your business strategy and goals.</p>
+    </section>
   </div>
+</body>
+
 
   <!-- Footer Section -->
 <footer class="footer">

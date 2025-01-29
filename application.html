@@ -7,51 +7,70 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <style>
-/* General Body Styling */
+ .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
 
-/* Improved Typography */
-.content {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-}
+    h1, h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
 
-/* Headings Styling */
-h1, h2, h3 {
-  color: #002147;
-}
+    h3 {
+      color: #444;
+    }
 
-/* Paragraph Styling */
-.content p {
-  font-size: 18px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  margin-bottom: 15px;
-}
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
 
-/* List Styling */
-.content ul {
-  padding-left: 20px;
-}
+    ul {
+      margin: 10px 0;
+      padding-left: 20px;
+      color: #444;
+    }
 
-.content ul li {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+    li {
+      margin-bottom: 8px;
+      font-size: 1.1rem;
+      color: #555;
+    }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .content {
-    padding: 15px;
-  }
+    .benefits-list {
+      list-style-type: disc;
+      margin-left: 30px;
+    }
 
-  .content p {
-    font-size: 16px;
-  }
-}
+    li strong {
+      color: #007bff;
+    }
+
+    .cta {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .cta a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sidebar removal */
+    .sidebar, .side-bar, #sidebar {
+      display: none !important;
+    }
+
 
 
 </style>
@@ -159,35 +178,33 @@ h1, h2, h3 {
   }
 </script>
   <!-- Content Section -->
-  <div class="content">
-    <h1>GeniusHub Technologies Applications Management (AM) Services</h1>
+  <div class="container">
+    
+    <p>GeniusHub Technologies offers Applications Management (AM) services designed to provide flexible, end-to-end solutions across the application lifecycle. Our services enable businesses to focus on core priorities, reduce costs, improve IT efficiency, and accelerate time-to-market, while freeing internal teams to focus on strategic goals. Our offerings include application enhancements, maintenance, user support, and service management, delivered on-site, off-site, or offshore based on your needs.</p>
 
-    <p>GeniusHub Technologies offers a comprehensive suite of Applications Management (AM) services designed to support organizations throughout the entire system lifecycle. Our goal is to enable businesses to concentrate on their core objectives, reduce operational costs, enhance IT efficiency, accelerate time-to-market, and free up internal resources to focus on strategic initiatives. Our key offerings include application enhancements, ongoing maintenance, user support, and service management.</p>
+    <h2>Why Choose Our AM Services?</h2>
+    <p>Applications are the backbone of your organization, driving growth by delivering critical functionality to customers, employees, and partners. With rising application complexity, maintenance costs, and limited skilled resources, businesses face challenges that can detract from key objectives. GeniusHub Technologies addresses these challenges with scalable, cost-effective solutions tailored to optimize your application ecosystem.</p>
 
-    <p>We provide flexible delivery options for our AM services—on-site, off-site, or offshore—tailored to meet your specific business needs.</p>
-
-    <h2>Empowering Your Business through Technology</h2>
-    <p>Technology applications are fundamental to your business success. They shape your competitive edge and drive organizational vitality by delivering critical information and functionalities to customers, employees, and partners. Our versatile AM services cover every phase of the application lifecycle, ensuring you can choose the most suitable option for your business.</p>
-
-    <p>As applications portfolios become more complex, maintenance costs rise, and skilled support becomes harder to find, many organizations face distractions that divert attention from critical business matters. Rising costs and the ongoing need for upgrades compel organizations to turn to our AM services for effective solutions.</p>
-
-    <h2>Benefits of GeniusHub Technologies AM Services:</h2>
-    <p>Organizations that leverage our AM services experience significant advantages, including cost savings, improved productivity, staff retention, and faster time-to-market. Our service offering is designed to address the challenge of sourcing, developing, and retaining the technical talent necessary to manage and enhance key applications, resulting in enhanced operational efficiency, greater application value, timely delivery, and manageable costs.</p>
-
-    <h3>Key Benefits:</h3>
-    <ul>
-      <li>Convert fluctuating, variable costs into predictable fixed costs</li>
-      <li>Lower operational expenses</li>
-      <li>Ensure consistent service quality</li>
-      <li>Free up internal resources to focus on core business and innovation</li>
-      <li>Access GeniusHub Technologies' world-class resources, methodologies, and tools</li>
-      <li>Let us manage staffing, ensuring you have the right talent for your projects</li>
-      <li>Shift to an off-site delivery model through our network of AM centers</li>
-      <li>Share risks and gain peace of mind with a trusted partner</li>
+    <h2>Key Benefits of Our AM Services</h2>
+    <ul class="benefits-list">
+      <li><strong>Predictable Costs</strong>: Turn variable costs into manageable fixed expenses.</li>
+      <li><strong>Cost Savings</strong>: Reduce operating costs while improving productivity.</li>
+      <li><strong>Quality Assurance</strong>: Receive high-quality, dependable service.</li>
+      <li><strong>Resource Optimization</strong>: Free internal teams for innovation and growth.</li>
+      <li><strong>Expert Access</strong>: Leverage our advanced methodologies, tools, and skilled talent.</li>
+      <li><strong>Flexible Delivery Models</strong>: Choose on-site, off-site, or offshore delivery through our AM service network.</li>
+      <li><strong>Risk Mitigation</strong>: Share operational risks with a trusted partner.</li>
     </ul>
 
-    <p>Choose GeniusHub Technologies’ Applications Management services and optimize your IT environment for maximum business impact.</p>
+    <h2>Driving Efficiency and Value</h2>
+    <p>Our AM clients experience improved cost control, productivity, and market responsiveness. GeniusHub Technologies provides the expertise needed to manage and enhance critical applications, ensuring efficiency, reduced costs, and greater application value.</p>
+
+    <div class="cta">
+      <p>Let GeniusHub Technologies empower your business with reliable, tailored Applications Management services.</p>
+      <p class="cta"><a href="contact-us.html">Contact us</a> today to learn more about how we can help optimize your application lifecycle.</p>
+    </div>
   </div>
+
 
  <footer class="footer">
   <div class="footer-container">
