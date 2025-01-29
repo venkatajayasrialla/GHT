@@ -6,6 +6,138 @@
   <title>ERP Implementation & SAP Development - Genius Hub Technologies</title>
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
+<style>
+
+
+/* Hero Section */
+.hero {
+  background-color: #003366;
+  color: white;
+  padding: 2px 0px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.0rem;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Services Section */
+.services {
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p {
+font-size: 1.0rem;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
+
+.card ul li {
+  font-size: 1.0rem;
+  text-align:left;
+}
+/* Card Hover Effect */
+.card:hover {
+  background-color: #D3D3D3; /* Light blue background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: scale(1.05); /* Slight scale up */
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact strong {
+  color: #003366;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+  }
+
+  .services h2 {
+    font-size: 1.7rem;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 <body>
   <!-- Header Section -->
   <div class="header">
@@ -109,7 +241,7 @@
     document.querySelector(".nav-small .menu").classList.toggle("active");
   }
 </script>
-  <!-- Content Section -->
+  <!-- Content Section 
   <div class="content">
     <h1>ERP Implementation and SAP Development, Integration, and Support</h1>
 
@@ -160,7 +292,73 @@
     </ul>
 
     <p>For additional information on our ERP services or to inquire further, please <a href="contact-us.html">contact us</a>.</p>
-  </div>
+  </div>-->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Expert ERP Implementation & SAP Services</h1>
+      <p>At GeniusHub Technologies, we specialize in delivering ERP solutions that drive business growth and efficiency. From SAP development to integration and continuous support, our services cater to your organizational needs across various sectors.</p>
+    </div>
+  </section>
+
+  <!-- ERP Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Comprehensive ERP & SAP Implementation Services</h2>
+      <p>We offer an array of ERP implementation services designed to streamline business operations, improve productivity, and ensure seamless integration. Our specialized SAP offerings include:</p>
+
+      <div class="service-cards">
+        <!-- SAP Development & Integration -->
+        <div class="card">
+          <h3>SAP Development, Integration, and Support</h3>
+          <p>We provide a range of SAP services, including development, integration, and ongoing support to keep your ERP systems running smoothly. Our services include SAP upgrades from R/3 to ERP 6.0 to help your business maintain modern, efficient processes.</p>
+        </div>
+
+        <!-- Human Capital Management -->
+        <div class="card">
+          <h3>Human Capital Management (HCM)</h3>
+          <p>We leverage advanced SAP tools to improve workforce management and employee satisfaction. From talent management to workforce deployment and payroll, we ensure that your HR processes align with your business goals.</p>
+          <ul>
+            <li>Workforce Analysis</li>
+            <li>Talent Management</li>
+            <li>Employee Development</li>
+            <li>Payroll Management</li>
+            <li>Self-Service Options</li>
+          </ul>
+        </div>
+
+        <!-- Supply Chain Management -->
+        <div class="card">
+          <h3>Supply Chain Management (SCM)</h3>
+          <p>Our comprehensive SAP solutions help optimize your supply chain by covering every phase—from design to procurement and logistics. We ensure efficient workflows that support your business's long-term success.</p>
+          <ul>
+            <li>Supply Chain Planning</li>
+            <li>Procurement & Manufacturing</li>
+            <li>Product Lifecycle Management</li>
+            <li>Logistics and Freight Management</li>
+          </ul>
+        </div>
+
+        <!-- Financial Management -->
+        <div class="card">
+          <h3>Financial Management</h3>
+          <p>We provide SAP-driven solutions for financial processes that enhance reporting, risk management, and compliance. From accounts payable to asset management, our financial management solutions empower businesses to tackle today’s challenges.</p>
+          <ul>
+            <li>Accounts Payable & Receivable</li>
+            <li>Controlling & Asset Management</li>
+            <li>Risk Management & Compliance</li>
+            <li>Sarbanes-Oxley Compliance</li>
+          </ul>
+        </div>
+      </div>
+<br>
+      <p>Our expertise spans multiple SAP modules to help organizations leverage the full potential of their ERP systems. Whether you need an upgrade, integration, or a comprehensive solution across departments, our team ensures smooth and effective implementation tailored to your specific business requirements.</p>
+
+      <h3>Contact Us for More Information</h3>
+      <p>If you're looking to transform your business with expert ERP solutions, get in touch with us to learn more about our services. We’re here to support your growth!</p>
+      <p>Call us at <strong>+1 (214) 432-5727</strong> or email us at <a href="mailto:info@ghtinc.org">info@ghtinc.org</a></p>
+    </div>
+  </section>
+
 
   <!-- Footer Section -->
 <footer class="footer">
