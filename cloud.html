@@ -7,6 +7,74 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+.content {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.content h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 32px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 28px;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.content ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.content ul li:before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  color: #27ae60;
+}
+
+.content p {
+  font-size: 18px;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.content ul li strong {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 28px;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+  }
+  
+  .content p {
+    font-size: 16px;
+  }
+}
+
+</style>
 <body>
   <div class="header">
     <div class="company-details">
@@ -109,68 +177,24 @@
     document.querySelector(".nav-small .menu").classList.toggle("active");
   }
 </script>
+<div class="content">
+  <h1>Cloud Computing Services at GeniusHub Technologies</h1>
+  <p>At GeniusHub Technologies, we provide innovative Cloud Computing solutions that empower businesses to scale, innovate, and reduce IT costs. Our comprehensive suite of cloud services includes everything from cloud strategy and migration to management and optimization.</p>
+  
+  <h2>Our Cloud Computing Services Include:</h2>
+  <ul>
+    <li><strong>Cloud Strategy & Consulting:</strong> Develop a clear cloud strategy aligned with your business goals.</li>
+    <li><strong>Cloud Migration:</strong> Seamlessly migrate your applications, data, and infrastructure to the cloud.</li>
+    <li><strong>Cloud Infrastructure Management:</strong> Manage and optimize cloud resources for efficiency, security, and cost-effectiveness.</li>
+    <li><strong>Hybrid Cloud Solutions:</strong> Combine the power of public and private clouds for enhanced flexibility and performance.</li>
+    <li><strong>Cloud Security & Compliance:</strong> Ensure your cloud environment is secure, compliant, and protected against cyber threats.</li>
+    <li><strong>Cloud Cost Optimization:</strong> Monitor and optimize cloud spending, ensuring you're only paying for what you need.</li>
+    <li><strong>Disaster Recovery & Business Continuity:</strong> Implement a robust disaster recovery plan with high availability and business continuity.</li>
+  </ul>
 
- <div class="carousel">
-  <div class="slides">
-    <div class="slide">
-      <img src="img1.png" alt="Image 1" class="active">
-      <div class="text-overlay">
-        <h2>Welcome to GeniusHub Technologies</h2>
-        <p>Your success, our commitment.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="img2.png" alt="Image 2">
-      <div class="text-overlay">
-        <h2>Innovative Solutions</h2>
-        <p>Driving business transformation.</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="img3.png" alt="Image 3">
-      <div class="text-overlay">
-        <h2>Expert Teams</h2>
-        <p>Delivering excellence globally.</p>
-      </div>
-    </div>
-    <div class="dots">
-      <div class="dot active"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
-  </div>
+  <p>Our expert team works closely with your business to ensure the best cloud solutions for your unique requirements. Whether you're looking to migrate to the cloud, enhance security, or optimize your existing cloud infrastructure, GeniusHub Technologies is your trusted partner for success.</p>
 </div>
 
-
-  <script>
-    const slides = document.querySelectorAll(".slides img");
-    const dots = document.querySelectorAll(".dot");
-    let currentSlide = 0;
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.toggle("active", i === index);
-      });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
-      });
-    }
-
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % slides.length; // Cycle through slides
-      showSlide(currentSlide);
-    }, 10000); // Change image every 15 seconds
-	
-	dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    currentSlide = index;
-    showSlide(currentSlide);
-  });
-});
-
-// Initialize first slide
-showSlide(currentSlide);
-  </script>
 </body>
 
 <footer class="footer">
