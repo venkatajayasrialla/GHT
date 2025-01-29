@@ -315,8 +315,10 @@
   
   .hamburger {
     display: flex;
+	cursor:pointer;
+	text-align:right;
   }
-
+  
   .nav-small .menu {
     display: none;
     flex-direction: column;
