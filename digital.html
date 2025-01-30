@@ -7,14 +7,104 @@
   <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <style>
-.content p{
-	font-size:18px;
-	font-family: "Times New Roman", Times, serif;
+.hero {
+  background-color: #004d7a;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
 }
-.content li{
-	font-size:18px;
-	font-family: "Times New Roman", Times, serif;
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 5px;
 }
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Services Section */
+.services {
+  background-color: #fff;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+
+.card {
+  background-color: #004d7a;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+}
+
+.services p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Training Section */
+.training {
+  background-color: #eeeeee;
+  padding: 5px 5px;
+}
+
+.training h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.training-details {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.training-details h3 {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+.training-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.training-details li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align:left;
+}
+
 </style>
 <body>
   <!-- Header Section -->
@@ -121,35 +211,57 @@
 </script>
 
   <!-- Content Section -->
-  <div class="content">
-    <h1>Internet/Intranet Application Development & Validation Services</h1>
-    
-    <p>GeniusHub Technologies offers comprehensive Internet and Intranet application development services, ensuring the creation of robust and scalable applications to meet your business needs. Our offerings include a well-established validation strategy, software testing methodology, and quality assurance consulting. We provide the following services:</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Empowering Your Business with Expert Solutions</h1>
+      <p>GeniusHub Technologies – Bridging Innovation & Excellence</p>
+    </div>
+  </section>
 
-    <ul>
-      <li><strong>Quality Assessments</strong>: Thorough evaluations to ensure your applications meet industry standards.</li>
-      <li><strong>Requirements Management</strong>: Helping you manage and define project requirements for seamless execution.</li>
-      <li><strong>Structured Testing</strong>: Comprehensive testing strategies to ensure functionality, performance, and security.</li>
-    </ul>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Internet/Intranet Application Development & Validation Services</h2>
+      <p>GeniusHub Technologies offers comprehensive Internet and Intranet application development services, ensuring the creation of robust and scalable applications to meet your business needs.</p>
 
-    <p>With extensive experience in FDA, USDA, DOD, and FAA-regulated applications, we are well-versed in the stringent requirements of government and manufacturing industries. Our expertise ensures that applications in these highly regulated fields meet compliance standards.</p>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Quality Assessments</h3>
+          <p>Thorough evaluations to ensure your applications meet industry standards.</p>
+        </div>
+        <div class="card">
+          <h3>Requirements Management</h3>
+          <p>Helping you manage and define project requirements for seamless execution.</p>
+        </div>
+        <div class="card">
+          <h3>Structured Testing</h3>
+          <p>Comprehensive testing strategies to ensure functionality, performance, and security.</p>
+        </div>
+      </div>
 
-    <hr>
+      <p>With extensive experience in FDA, USDA, DOD, and FAA-regulated applications, we ensure compliance with stringent government and manufacturing standards.</p>
+    </div>
+  </section>
 
-    <h2>Corporate Training</h2>
-    <p>At GeniusHub Technologies, we understand the pivotal role training plays in the success of any organization. That’s why we dedicate a significant portion of our business to providing cutting-edge training for individuals eager to stay ahead in the fast-paced world of technology.</p>
+  <!-- Training Section -->
+  <section class="training">
+    <div class="container">
+      <h2>Corporate Training</h2>
+      <p>At GeniusHub Technologies, we understand the pivotal role training plays in the success of any organization. Our programs are designed to keep your team ahead in the fast-paced world of technology.</p>
 
-    <h3>Our Training Approach:</h3>
-    <p>We focus on providing real-world applications of the technologies we teach. Our courses include hands-on experience where trainees work on live projects directly related to the topics being taught. This ensures that what they learn is practical and applicable to their roles.</p>
+      <div class="training-details">
+        <h3>Our Training Approach</h3>
+        <p>We focus on providing real-world applications of the technologies we teach. Trainees work on live projects related to the topics being taught, ensuring practical learning.</p>
+        <ul>
+          <li><strong>Latest Technology:</strong> We use state-of-the-art tools for training delivery.</li>
+          <li><strong>Instructor Availability:</strong> Trainees can interact one-on-one with instructors to clarify concepts.</li>
+          <li><strong>Post-Course Support:</strong> 6 months of email support after course completion.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <ul>
-      <li><strong>Latest Technology</strong>: We utilize state-of-the-art tools and technologies for training delivery.</li>
-      <li><strong>Instructor Availability</strong>: Trainees can interact one-on-one with instructors to clarify concepts and improve their learning.</li>
-      <li><strong>Post-Course Support</strong>: We offer 6 months of email support after the completion of the course, ensuring that trainees have ongoing assistance to answer any questions that may arise.</li>
-    </ul>
-
-    <p>At GeniusHub Technologies, our training programs are designed to empower individuals to leverage the latest technologies and keep their skills aligned with industry demands.</p>
-  </div>
 
   <!-- Footer Section -->
 <footer class="footer">
