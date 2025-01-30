@@ -311,13 +311,21 @@
   .nav{
 	  display:none;
   }
-	  
-  
-  .hamburger {
+  .nav-small {
     display: flex;
-	cursor:pointer;
-	text-align:right;
-  }
+    justify-content: space-between; /* Ensures logo is on the left and hamburger on the right */
+    align-items: center;
+    padding: 10px;
+    background-color: #4682B4;
+    position: relative;
+}
+
+.hamburger {
+    display: flex;
+    cursor: pointer;
+    margin-left: auto; /* Pushes the hamburger to the right */
+    font-size: 24px;
+}
   
   .nav-small .menu {
     display: none;
