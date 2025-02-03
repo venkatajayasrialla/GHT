@@ -240,61 +240,28 @@ font-size: 1.0rem;
 </div>
 <script>
   function toggleMenu() {
-    document.querySelector(".nav-small .menu").classList.toggle("active");
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
   }
 </script>
-  <!-- Content Section 
-  <div class="content">
-    <h1>ERP Implementation and SAP Development, Integration, and Support</h1>
-
-    <p>We offer comprehensive SAP implementation services, providing both functional and technical expertise across a range of key business areas. Our offerings also include SAP upgrades from R/3 to ERP 6.0.</p>
-
-    <h2>Key Areas of Expertise:</h2>
-    <ol>
-      <li><strong>Human Capital Management (HCM)</strong></li>
-      <li><strong>Supply Chain Management (SCM)</strong></li>
-      <li><strong>Financial Management</strong></li>
-      <li><strong>NetWeaver Integration</strong></li>
-      <li><strong>Technical and Functional Services</strong></li>
-    </ol>
-
-    <h2>Functional Expertise:</h2>
-
-    <h3>Human Capital Management (HCM)</h3>
-    <p>In today’s competitive environment, retaining top talent and enhancing employee satisfaction are critical. By combining advanced web technologies with traditional R/3 functionalities, we offer a comprehensive HCM solution that boosts employee productivity, job satisfaction, and retention.</p>
-    <p><strong>Services Include:</strong></p>
-    <ul>
-      <li>Workforce Analytics</li>
-      <li>Talent Acquisition and Retention</li>
-      <li>Employee Growth and Development</li>
-      <li>Workforce Deployment and Planning</li>
-      <li>Workforce Process Management (including Payroll)</li>
-      <li>End-User Solutions (including Manager and Employee Self-Service, Microsoft Duet)</li>
-    </ul>
-
-    <h3>Supply Chain Management (SCM)</h3>
-    <p>Our extensive supply chain solutions cover every aspect of the supply chain lifecycle, from initial design through sourcing, planning, production, and distribution.</p>
-    <p><strong>Services Include:</strong></p>
-    <ul>
-      <li>Supply Chain Strategy and Planning</li>
-      <li>Procurement and Production Management</li>
-      <li>Product Lifecycle Optimization</li>
-      <li>Freight and Logistics Management</li>
-    </ul>
-
-    <h3>Financial Management</h3>
-    <p>We help organizations streamline their financial operations by designing and implementing efficient processes and systems to address complex financial challenges.</p>
-    <p><strong>Services Include:</strong></p>
-    <ul>
-      <li>Accounts Payable and Receivable Management</li>
-      <li>Financial Control and Reporting</li>
-      <li>Asset Management and Treasury Services</li>
-      <li>Risk Management Solutions</li>
-      <li>Sarbanes-Oxley Compliance</li>
-    </ul>
-
-    <p>For additional information on our ERP services or to inquire further, please <a href="contact-us.html">contact us</a>.</p>
-  </div>-->
   <section class="hero">
     <div class="hero-content">
       <h1>Expert ERP Implementation & SAP Services</h1>
