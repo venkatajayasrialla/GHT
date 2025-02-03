@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - GENIUSHUB TECHNOLOGIES</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+.content {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: white;
+      margin: 20px auto;
+      max-width: 1100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .content h1 {
+      font-size: 36px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .content p {
+      font-size: 18px;
+      color: #7f8c8d;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    /* Service List */
+    .service-list {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+    .service-list li {
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    .service-list li:hover {
+      background-color: #1abc9c;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+    .service-list li h3 {
+      color: #2c3e50;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Section Heading */
+    .section-heading {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 40px;
+      color: #34495e;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .service-list {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+<body>
+ <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script>
+  function toggleMenu() {
+    document.querySelector(".nav-small .menu").classList.toggle("active");
+  }
+</script>
+<div class="content">
+    <h1>AI/ML and Data Science Services</h1>
+    <p>At GeniusHub Technologies, we help businesses harness the power of Artificial Intelligence (AI), Machine Learning (ML), and Data Science to drive innovation, make smarter decisions, and gain a competitive edge in the market.</p>
+
+    <p>Our AI/ML/Data Science services are designed to help you unlock the potential of your data. Whether you are looking to predict customer behavior, automate processes, or enhance business operations, we have the expertise and experience to bring your ideas to life.</p>
+
+    <h2 class="section-heading">Our AI/ML/Data Science Services Include:</h2>
+    <ul class="service-list">
+      <li>Data Analysis and Data Engineering</li>
+      <li>AI Model Development</li>
+      <li>Machine Learning Algorithm Implementation</li>
+      <li>Natural Language Processing (NLP)</li>
+      <li>Predictive Analytics</li>
+      <li>Business Intelligence and Reporting</li>
+      <li>Deep Learning and Neural Networks</li>
+      <li>AI Chatbot Development</li>
+    </ul>
+
+<div class="content">
+    <h1>AI/ML and Data Science Services</h1>
+    <p>At GeniusHub Technologies, we specialize in harnessing the power of Artificial Intelligence (AI), Machine Learning (ML), and Data Science to drive business transformation. Our goal is to enable data-driven decisions that optimize efficiency, enhance user experiences, and increase profitability.</p>
+    
+    <h2 class="section-heading">Our AI/ML/Data Science Services Include:</h2>
+    <ul class="service-list">
+      <li>
+        <h3>Data Analysis & Engineering</h3>
+        <p>We collect, clean, and process data to make it usable for analysis and modeling. Our team uses advanced tools to extract meaningful insights.</p>
+      </li>
+      <li>
+        <h3>AI Model Development</h3>
+        <p>We create custom AI models to address specific business challenges, enhancing automation and efficiency.</p>
+      </li>
+      <li>
+        <h3>Machine Learning Algorithm Implementation</h3>
+        <p>We develop and deploy machine learning algorithms to predict future trends and behaviors with high accuracy.</p>
+      </li>
+      <li>
+        <h3>Natural Language Processing (NLP)</h3>
+        <p>Our NLP solutions enable machines to understand and respond to human language, enhancing communication with users.</p>
+      </li>
+      <li>
+        <h3>Predictive Analytics</h3>
+        <p>We help businesses predict future outcomes based on historical data, aiding in proactive decision-making.</p>
+      </li>
+      <li>
+        <h3>Business Intelligence and Reporting</h3>
+        <p>We provide insightful dashboards and reporting tools to visualize data and enhance business strategies.</p>
+      </li>
+      <li>
+        <h3>Deep Learning & Neural Networks</h3>
+        <p>We leverage deep learning techniques for complex problem-solving, such as image recognition and autonomous systems.</p>
+      </li>
+      <li>
+        <h3>AI Chatbot Development</h3>
+        <p>Our AI chatbots deliver personalized customer experiences, automating responses and improving support efficiency.</p>
+      </li>
+    </ul>
+
+    <h2 class="section-heading">Why Choose Our AI/ML Services?</h2>
+    <p>Partner with us to experience cutting-edge AI/ML solutions that deliver business value and transform your organization:</p>
+    <ul class="service-list">
+      <li><strong>Expertise:</strong> Highly skilled team of data scientists and AI specialists.</li>
+      <li><strong>Customized Solutions:</strong> Tailored AI/ML strategies to meet your specific needs.</li>
+      <li><strong>End-to-End Services:</strong> From data collection to model deployment and monitoring.</li>
+      <li><strong>Innovative Technology:</strong> Use of the latest technologies in AI, ML, and data science.</li>
+      <li><strong>Data-Driven Insights:</strong> Actionable insights to drive better decision-making.</li>
+    </ul>
+
+    <h2 class="section-heading">Industries We Serve:</h2>
+    <ul class="service-list">
+      <li>Healthcare</li>
+      <li>Retail</li>
+      <li>Finance & Banking</li>
+      <li>Manufacturing</li>
+      <li>Telecommunications</li>
+      <li>Education</li>
+      <li>Energy</li>
+      <li>Supply Chain</li>
+    </ul>
+  </div>
+  </div>
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+</html>
